@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class AlternateRowAdapter extends SimpleAdapter{
 
-    private final int[] colors = new int[] { Color.parseColor("1b224375"),Color.parseColor("1b224375")};//};//1b224375
+    private final int[] colors = new int[] { Color.parseColor("#2d355a75"),Color.TRANSPARENT};//};//1b224375
     public AlternateRowAdapter(Context context, ArrayList array, int layout,
                                      String[] from, int[] to) {
         super(context, array, layout, from, to);
@@ -27,11 +27,6 @@ public class AlternateRowAdapter extends SimpleAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = super.getView(position, convertView, parent);
-        /*if (position % 2 == 1) {
-            view.setBackgroundColor(Color.BLUE);
-        } else {
-            view.setBackgroundColor(Color.CYAN);
-        }*/
         int colorPos = position % colors.length;
         view.setBackgroundColor(colors[colorPos]);
         return view;
