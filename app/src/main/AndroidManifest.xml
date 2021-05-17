@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.senter.demo.uhf"
+android:versionCode="1"
+android:versionName="1.0">
+
+<uses-sdk
+    android:minSdkVersion="15"
+    android:targetSdkVersion="15" />
+
+<uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+<application
+    android:name=".App"
+    android:icon="@drawable/logoicon"
+    android:label="@string/app_name"
+    android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+
+    <!-- ===================== -->
+    <!-- activities for model D2 -->
+    <!-- ===================== -->
+    <activity
+        android:name=".modelD2.Activity_FunctionSelection"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".modelD2.Activity1Inventory"
+        android:label="@string/Recognition"
+        android:screenOrientation="portrait"></activity>
+    <activity
+        android:name=".modelD2.Activity2InventoryFocus"
+        android:label="@string/Recognition"
+        android:screenOrientation="portrait"></activity>
+    <activity
+        android:name=".modelD2.Activity3AddTag"
+        android:label="@string/Recognition"
+        android:screenOrientation="portrait"></activity>
+    <activity
+        android:name=".modelD2.Activity4Settings"
+        android:label="@string/idConfigureActivity_title"
+        android:screenOrientation="portrait"></activity>
+
+    <!-- D2 6B -->
+    <activity
+        android:name=".modelD2.iso18k6b.Activity1Inventory"
+        android:label="@string/Recognition"
+        android:screenOrientation="portrait"></activity>
+    <!-- ===================== -->
+
+    <!-- ===================== -->
+    <!-- Common ui -->
+    <!-- ===================== -->
+    <activity
+        android:name=".record.ActivityRecordsList"
+        android:label="@string/RecordFind"
+        android:screenOrientation="portrait"></activity>
+    <activity
+        android:name=".record.ActivityRecordDisplayer"
+        android:label="@string/RecordCheck"
+        android:screenOrientation="portrait"></activity>
+
+</application>
+
+</manifest>

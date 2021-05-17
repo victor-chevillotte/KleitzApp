@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/inventorys_border"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/idE2CommenLv2Overlap_lvShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transcriptMode="alwaysScroll" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp" 
+        android:background="@color/gray"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="100" >
+
+            <TextView
+                android:id="@+id/idE2CommenLv2Overlap_labTagsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
+                android:text="@string/idTagsCount_Colon"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/idE2CommenLv2Overlap_tvTagsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBottom="@+id/idE2CommenLv2Overlap_labTagsCount"
+                android:layout_toRightOf="@+id/idE2CommenLv2Overlap_labTagsCount"
+                android:text="0"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

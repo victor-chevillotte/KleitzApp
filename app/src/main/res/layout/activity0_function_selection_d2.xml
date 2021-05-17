@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#1b2243"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/inventoryButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        android:background="#017b88"
+        android:elevation="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/Inventory" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:elevation="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        android:background="#017b88"
+    android:gravity="center"
+        android:text="@string/settings"/>
+
+    <TextView
+        android:id="@+id/supportcontact1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.80"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Pour toute demande de support veuillez contacter Etienne Besse :"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/supportcontact2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.84"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="07.77.70.54.99"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/supportcontact3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.87"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="etienne.besse@kleitz-electricite.fr"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:background="#f6b101"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.90"/>
+
+    <TextView
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.94"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="© 2021 Kleitz RFID - Tous droits réservés"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Développement par Victor Chevillotte"
+        android:textAlignment="center" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
